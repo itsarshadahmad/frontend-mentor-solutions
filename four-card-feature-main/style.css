@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	/* Primary */
+	--red: hsl(0, 78%, 62%);
+	--cyan: hsl(180, 62%, 55%);
+	--orange: hsl(34, 97%, 64%);
+	--blue: hsl(212, 86%, 64%);
+
+	/* Neutral */
+	--veryDarkBlue: hsl(234, 12%, 34%);
+	--grayishBlue: hsl(229, 6%, 66%);
+	--veryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+	box-sizing: border-box;
+	background-color: var(--veryLightGray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.page-1 {
+	text-align: center;
+	width: 500px;
+}
+
+.heading {
+	color: var(--veryDarkBlue);
+	font-size: 2rem;
+}
+
+.heading.thick {
+	font-weight: 200;
+}
+
+.page-1 > p {
+	margin: 1rem 0 2rem;
+	font-size: 1rem;
+	color: var(--grayishBlue);
+}
+
+.page-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.card {
+	width: 300px;
+	background-color: var(white);
+	border-radius: 10px;
+	box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.1);
+	margin: 15px;
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.card:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 100%;
+}
+
+.card-red:after {
+	background-color: var(--red);
+}
+
+.card-cyan:after {
+	background-color: var(--cyan);
+}
+
+.card-orange:after {
+	background-color: var(--orange);
+}
+
+.card-blue:after {
+	background-color: var(--blue);
+}
+
+.card img {
+	display: block;
+	margin-left: auto;
+}
+
+.mid-card {
+	transform: translateY(50%);
+}
+
+.card p {
+	color: var(--grayishBlue);
+	margin: 0.5rem 0 2rem;
+	font-size: 1rem;
+}
+
+.card h2 {
+	opacity: 0.8;
+}
+
+@media (max-width: 815px) {
+	.mid-card {
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 525px) {
+	.page-1 {
+		width: 90%;
+	}
+
+	.page-1 h1 {
+		font-size: 1.5rem;
+	}
+
+	.page-1 p {
+		font-size: 0.8rem;
+	}
+
+	.page-2 h2 {
+		font-size: 1.2rem;
+	}
+
+	.page-2 p {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 395px) {
+	.card {
+		width: 100%;
+	}
+
+	body {
+		padding: 0;
+	}
+}

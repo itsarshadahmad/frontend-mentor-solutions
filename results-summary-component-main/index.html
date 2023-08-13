@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="result-card">
+      <p class="result-heading">Your Result</p>
+      <div class="result">
+        <h1 id="result-value">76</h1>
+        <p id="result-outof">of 100</p>
+      </div>
+
+      <div class="review-card">
+        <h3 class="review">Great</h3>
+        <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+
+    <div class="summary-card">
+      <h3>Summary</h3>
+
+      <div>
+        <p class="reaction-block summary-block"><span class="img-logo"><img
+              src="./assets/images/icon-reaction.svg" alt="Lightning image" />Reaction</span>
+          <span>
+            <span class="result-data">80</span> <span class="result-outof">/ 100</span></span>
+        </p>
+
+        <p class="memory-block summary-block"><span class="img-logo"><img
+              src="./assets/images/icon-memory.svg" alt="Brain image" />Memory</span>
+          <span>
+            <span class="result-data">92</span> <span class="result-outof">/ 100</span></span>
+        </p>
+
+        <p class="verbal-block summary-block"><span class="img-logo"><img
+              src="./assets/images/icon-verbal.svg" alt="Chat image" />Verbal</span>
+          <span>
+            <span class="result-data">61</span> <span class="result-outof">/ 100</span></span>
+        </p>
+
+        <p class="visual-block summary-block"><span class="img-logo"><img
+              src="./assets/images/icon-visual.svg" alt="Eye image" />Visual</span>
+          <span>
+            <span class="result-data">72</span> <span class="result-outof">/ 100</span></span>
+        </p>
+
+        <button id="continue-button">Continue</button>
+      </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/itsarshadahmad">Arshad Ahmad</a>.
+  </footer>
+</body>
+
+</html>
