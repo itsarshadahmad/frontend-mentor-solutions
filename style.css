@@ -1,0 +1,45 @@
+html,
+body {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+h1,
+p {
+  text-align: center;
+  margin: 1.2em;
+  color: #331D2C;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+table,
+th,
+td {
+  text-align: start;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border: 1px solid #331D2C;
+  border-collapse: collapse;
+  color: #331d2c;
+}
+
+a {
+  color: #3F2E3E;
+}
+
+th {
+  background-color: #c4a4b4;
+}
+
+tr:hover {
+  background-color: #efe1d1;
+}
