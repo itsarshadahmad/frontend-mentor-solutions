@@ -8,7 +8,7 @@ h1,
 p {
   text-align: center;
   margin: 1.2em;
-  color: #331D2C;
+  color: #20262e;
 }
 
 h1 {
@@ -27,19 +27,20 @@ td {
   text-align: start;
   font-size: 1.2rem;
   padding: 0.8rem;
-  border: 1px solid #331D2C;
+  border: 1px solid #20262e;
   border-collapse: collapse;
-  color: #331d2c;
+  color: #20262e;
 }
 
 a {
-  color: #3F2E3E;
+  color: #20262e;
 }
 
 th {
-  background-color: #c4a4b4;
+  background-color: #cd5888;
+  color: white;
 }
 
 tr:hover {
-  background-color: #efe1d1;
+  background-color: #e9e8e8;
 }
