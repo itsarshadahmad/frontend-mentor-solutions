@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+	/* Primary */
+	--softRed: hsl(7, 99%, 70%);
+	--yellow: hsl(51, 100%, 49%);
+	--darkDesaturatedCyan: hsl(167, 40%, 24%); /* graphic design text */
+	--darkBlue: hsl(198, 62%, 26%); /* photography text */
+	--darkModerateCyan: hsl(168, 34%, 41%); /* footer */
+
+	/* Neutral */
+	--veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+	--veryDarkGrayishBlue: hsl(213, 9%, 39%);
+	--darkGrayishBlue: hsl(232, 10%, 55%);
+	--grayishBlue: hsl(210, 4%, 67%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation */
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 15px;
+}
+
+.nav-ham {
+	display: none;
+}
+
+.logo {
+	height: min-content;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.nav ul {
+	display: flex;
+	align-items: center;
+}
+
+.nav ul li {
+	margin: 0 15px;
+	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+	color: var(--white);
+	font-size: 1.1rem;
+	font-family: "Barlow", sans-serif;
+	font-weight: 100;
+}
+
+.contact-btn {
+	font-family: "Barlow", sans-serif;
+	background-color: var(--white);
+	padding: 12px 20px;
+	border-radius: 20px;
+	color: var(--darkBlue);
+	font-weight: bold;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+.contact-btn:hover {
+	background-color: rgba(55, 217, 246, 40%);
+	color: var(--white);
+	box-shadow: 1px 1px rgba(0, 0, 0, 10%);
+}
+
+.contact-btn:active {
+	transform: translate(2px, 2px);
+}
+
+/* First screen (Orange screen) */
+.intro-screen {
+	background-image: url("./images/desktop/image-header.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.title-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 50%;
+}
+
+.tagline {
+	color: var(--white);
+	font-size: 4rem;
+	font-family: "Fraunces", serif;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+
+/* Taglines Sections (Screen 2,3) */
+.section-container {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+}
+
+.section-description {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 8rem;
+}
+
+.section-description h1 {
+	font-family: "Fraunces", serif;
+	font-size: 3.5rem;
+}
+
+.egg-image {
+	background-image: url("./images/desktop/image-transform.jpg");
+}
+
+.section-image {
+	width: 50.2vw;
+	height: 80vh;
+	background-position: center;
+}
+
+.learn-more-link {
+	position: relative;
+	color: var(--veryDarkDesaturatedBlue);
+	text-decoration: none;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.learn-more-link::before {
+	content: "";
+	position: absolute;
+	width: 116px;
+	height: 10px;
+	left: -6px;
+	top: 10px;
+	border-radius: 60px;
+	z-index: -1;
+}
+
+.yellow-link::before {
+	background: hsl(51, 100%, 80%);
+}
+
+.yellow-link:hover::before {
+	background: var(--yellow);
+}
+
+.pink-link::before {
+	background: hsl(7, 99%, 90%);
+}
+
+.pink-link:hover::before {
+	background: var(--softRed);
+}
+
+.section-description p {
+	width: 80%;
+	color: var(--darkGrayishBlue);
+	font-family: "Barlow", sans-serif;
+	line-height: 1.5rem;
+}
+
+.glass-image {
+	background-image: url("./images/desktop/image-stand-out.jpg");
+}
+
+/* Background Images (Screen 4) */
+.background-tagline-section {
+	height: 80vh;
+	display: flex;
+}
+
+.image-cover-section {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	background-position: center;
+	background-size: cover;
+	padding: 4rem 10rem;
+	text-align: center;
+}
+
+.cherry-section {
+	background-image: url("./images/desktop/image-photography.jpg");
+}
+
+.orange-section {
+	background-image: url("./images/desktop/image-graphic-design.jpg");
+}
+
+.image-cover-section h1 {
+	font-weight: bold;
+	font-family: "Fraunces", serif;
+}
+
+.image-cover-section p {
+	line-height: 1.55rem;
+}
+
+.font-blue {
+	color: var(--darkBlue);
+}
+
+.font-green {
+	color: var(--darkDesaturatedCyan);
+}
+
+.image-cover-section p {
+	font-family: "Barlow", sans-serif;
+}
+
+/* Client Testimonials */
+.testimonial-section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.testimonial-container {
+	display: flex;
+	width: 70%;
+}
+
+.people-testimonial {
+	padding: 0 20px;
+	text-align: center;
+}
+
+.people-testimonial img {
+	border-radius: 50%;
+	width: 90px;
+}
+
+.people-desc {
+	font-family: "Barlow", sans-serif;
+	color: var(--veryDarkGrayishBlue);
+	line-height: 1.8rem;
+}
+
+.people-name {
+	margin-top: 5rem;
+	font-family: "Fraunces", serif;
+	color: var(--veryDarkDesaturatedBlue);
+}
+
+.people-role {
+	font-family: "Barlow", sans-serif;
+	color: var(--grayishBlue);
+}
+
+.testimonial-section h1 {
+	font-family: "Fraunces", serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 5rem;
+	color: var(--darkGrayishBlue);
+}
+
+/* Ending screen */
+.ending-section {
+	display: flex;
+	height: 70vh;
+}
+
+.ending-images {
+	height: 100%;
+	width: 25%;
+	background-size: cover;
+	background-position: center;
+}
+
+.orange-image {
+	background-image: url("./images/desktop/image-gallery-orange.jpg");
+}
+
+.bottle-image {
+	background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+}
+
+.cone-image {
+	background-image: url("./images/desktop/image-gallery-cone.jpg");
+}
+
+.sugar-image {
+	background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+/* Footer Screen */
+.footer-section {
+	height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	background-color: hsl(168, 34%, 68%);
+}
+
+.footer-section h1 {
+	font-family: "Barlow", sans-serif;
+	color: var(--darkDesaturatedCyan);
+	font-size: 2.4rem;
+	margin-bottom: 0;
+}
+
+.footer-links {
+	margin: 10px;
+	display: flex;
+}
+
+.footer-links p {
+	font-family: "Barlow", sans-serif;
+	margin: 0 2rem;
+	color: var(--darkModerateCyan);
+}
+
+.footer-social img {
+	margin: 0 1rem;
+}

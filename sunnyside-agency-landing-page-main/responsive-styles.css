@@ -1,0 +1,221 @@
+/* Media Query */
+@media (max-width: 1130px) {
+	.section-description h1 {
+		font-size: 2.5rem;
+	}
+
+	.image-cover-section {
+		padding: 2rem 5rem;
+	}
+
+	.section-description {
+		padding: 0 2rem;
+	}
+
+	.testimonial-container {
+		width: 80%;
+	}
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+	.testimonial-container {
+		width: 100%;
+	}
+
+	.nav-ham {
+		display: block;
+		margin-right: 20px;
+	}
+
+	.nav ul {
+		display: none;
+	}
+
+	.triangle-nav {
+		display: none;
+	}
+
+	.navbar-links.active {
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		top: 25%;
+		left: 50%;
+		transform: translate(-50%, -25%);
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: white;
+		width: 80%;
+		height: 50%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav ul li a {
+		color: hsl(210, 4%, 67%);
+		text-align: center;
+	}
+
+	.contact-btn {
+		background-color: hsl(51, 100%, 49%);
+	}
+
+	.triangle-nav.active {
+		display: inline;
+		border-right: 1px solid white;
+		border-bottom: 30px solid white;
+		border-left: 30px solid transparent;
+		position: absolute;
+		right: 10%;
+		top: 9%;
+	}
+
+	.tagline {
+		font-size: 3rem;
+	}
+
+	.section-container {
+		height: auto;
+		width: auto;
+		flex-direction: column;
+	}
+
+	.section-description {
+		width: 100vw;
+		align-items: center;
+		text-align: center;
+		height: 80vh;
+	}
+
+	.section-description h1 {
+		font-size: 3rem;
+	}
+
+	.section-image {
+		width: 100vw;
+		order: -1;
+	}
+
+	.egg-image {
+		background-image: url("./images/mobile/image-transform.jpg");
+	}
+
+	.glass-image {
+		background-image: url("./images/mobile/image-stand-out.jpg");
+	}
+
+	.intro-screen {
+		background-image: url("./images/mobile/image-header.jpg");
+		background-position: center;
+		text-align: center;
+	}
+
+	.background-tagline-section {
+		flex-direction: column;
+		width: 100vw;
+		height: auto;
+	}
+
+	.background-tagline-section {
+		height: auto;
+	}
+
+	.image-cover-section {
+		width: 100vw;
+		height: 120vh;
+		padding: 4rem 2rem;
+	}
+
+	.cherry-section {
+		background-image: url("./images/mobile/image-photography.jpg");
+	}
+
+	.orange-section {
+		background-image: url("./images/mobile/image-graphic-design.jpg");
+	}
+
+	.testimonial-section {
+		height: auto;
+	}
+
+	.testimonial-section h1 {
+		text-align: center;
+	}
+
+	.testimonial-container {
+		margin: 10px;
+		flex-direction: column;
+		width: 90%;
+	}
+
+	.people-testimonial {
+		padding: 30px;
+	}
+
+	.people-name {
+		margin-top: 2.5rem;
+	}
+
+	.ending-section {
+		flex-wrap: wrap;
+		width: 100vw;
+		height: auto;
+	}
+
+	.ending-images {
+		height: 50vh;
+		width: 50%;
+	}
+
+	.orange-image {
+		background-image: url("./images/mobile/image-gallery-orange.jpg");
+	}
+
+	.bottle-image {
+		background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
+	}
+
+	.cone-image {
+		background-image: url("./images/mobile/image-gallery-cone.jpg");
+	}
+
+	.sugar-image {
+		background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
+	}
+}
+
+@media (max-width: 375px) {
+	.tagline {
+		font-size: 1.5rem;
+	}
+
+	.section-description {
+		height: auto;
+		padding: 0;
+	}
+
+	.footer-links {
+		flex-direction: column;
+	}
+
+	.footer-links p {
+		margin: 10px 0;
+	}
+
+	.testimonial-section h1 {
+		font-size: 1.3rem;
+	}
+
+	.image-cover-section h1 {
+		font-size: 1.5rem;
+	}
+
+	.section-description h1 {
+		font-size: 1.5rem;
+	}
+
+	.section-description p {
+		text-align: center;
+	}
+}
